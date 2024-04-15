@@ -3,13 +3,103 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EDC CREATIVE</title>
+  <title>EDC Creative</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-  
+  <header class="header">
+    <nav class="nav container">
+      <div class="nav__email">
+        <img class="nav__email-icon" src="./assets/icons/email.svg" alt="Icon email">
+        <a class="nav__email-name" href="mailto:info@edccreative.com">info@edccreative.com</a>
+      </div>
+      <ul class="nav__socials-media">
+        <li class="nav__socials-media-item">
+          <a class="nav__socials-media-link" href="#">
+            <img class="nav__socials-media-icon" src="./assets/icons/facebook.svg" alt="Icon facebook">
+          </a>
+        </li>
+        <li class="nav__socials-media-item">
+          <a class="nav__socials-media-link" href="#">
+            <img class="nav__socials-media-icon" src="./assets/icons/instagram.svg" alt="Icon instagram">
+          </a>
+        </li>
+        <li class="nav__socials-media-item">
+          <a class="nav__socials-media-link" href="#">
+            <img class="nav__socials-media-icon" src="./assets/icons/behance.svg" alt="Icon behance">
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <section class="section section-one">
+    <section class="hero">
+      <nav class="navbar">
+        <div class="navbar__container container">
+          <a class="navbar__logo" href="#">
+            <img src="./assets/icons/logo.svg" alt="Logo EDC Creative">
+          </a>
+          <div class="navbar__buttons">
+            <a class="btn btn__secondary btn__secondary--navbar" href="#">
+              <img class="icon" src="./assets/icons/icon-user.svg" alt="Icon user">
+              Iniciar Sesión
+            </a>
+            <a class="btn btn__primary btn__primary--navbar" href="#">
+              <img class="icon" src="./assets/icons/add-to-cart.svg" alt="Icon add to cart">
+              Adquirir Curso
+            </a>
+          </div>
+        </div>
+      </nav>
+      <section class="hero__content container">
+        <div class="hero__texts">
+          <h1 class="title hero__title">
+            <span class="title-white">CONVIÉRTETE EN EL</span>
+            <span class="title-yellow">MEJOR DISEÑADOR</span>  
+          </h1>
+          <h2 class="subtitle hero__subtitle">ES HORA DE EVOLUCIONAR</h2>
+          <p class="hero__paragraph">Conoce y aprende todos mis métodos y técnicas para crear flyers avanzados en <span class="bold">Photoshop</span> y animaciones en <span class="bold">After Effects</span> para fiestas.</p>
+        </div>
+        <div class="hero__buttons">
+          <a class="btn btn__primary btn__primary--hero" href="#">Incríbete aquí</a>
+          <a class="btn btn__secondary btn__secondary--hero" href="#">
+            <img class="icon" src="./assets/icons/play.svg" alt="Icon play">
+            Ver Demo
+          </a>
+        </div>
+        <figure class="hero__figure">
+          <img src="./assets/icons/adobe.png" alt="Icon photoshop and after effects">
+        </figure>
+      </section>
+      <footer class="hero__footer">
+        <div class="hero__footer-container container">
+          <div class="hero__info">
+            <img src="./assets/icons/certificate.svg" alt="Icon certificate">
+            <div class="hero__info-title">
+              <span class="small">Certificado</span>
+              <span>Digital</span>
+            </div>
+          </div>
+          <div class="hero__info">
+            <img src="./assets/icons/desktop.svg" alt="Icon desktop">
+            <div class="hero__info-title">
+              <span class="small">Aula</span>
+              <span>Virtual</span>
+            </div>
+          </div>
+          <div class="hero__info">
+            <img src="./assets/icons/bar-chart.svg" alt="Icon bar chart">
+            <div class="hero__info-title">
+              <span class="small">Equilibrado</span>
+              <span>por Niveles</span>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </section>
+  </section>
 </body>
 </html>
