@@ -432,7 +432,6 @@ p { text-wrap: pretty; }
   font-weight: 500;
   line-height: 1.5;
   text-transform: uppercase;
-  text-shadow: 0 0 5px var(--rose);
 }
 
 /* SECTION CREATIVITY - SLIDER */
@@ -526,8 +525,54 @@ p { text-wrap: pretty; }
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 3rem;
+  align-items: flex-end;
   height: 100%;
+}
+
+.managed__content {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+}
+
+.title-managed {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+
+.title-white-managed { font-size: var(--step-4); }
+
+.managed__paragraph {
+  margin-bottom: 1.5rem;
+  font-size: var(--step-1);
+  font-weight: 500;
+}
+
+.managed__cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.managed__card {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 280px;
+  padding: .7rem 1rem;
+  background-color: #17003B;
+  border-radius: 1.5rem 0 1.5rem 0;
+  border: 2px solid var(--rose);
+  box-shadow: 0 0 4px var(--rose);
+}
+
+.managed__card p {
+  font-size: var(--step-0);
+  font-weight: 500;
 }
 
 @media (width >= 375px) {
