@@ -99,11 +99,6 @@ p { text-wrap: pretty; }
 
 .title-yellow { color: var(--yellow);}
 
-.subtitle {
-  font-size: var(--step-2);
-  font-weight: 700;
-}
-
 .section {
   height: 100vh;
   background-repeat: no-repeat;
@@ -244,12 +239,6 @@ p { text-wrap: pretty; }
 }
 
 .hero__title { order: 1; }
-
-.hero__subtitle {
-  text-align: center;
-  order: 0;
-  letter-spacing: .2rem;
-}
 
 .hero__paragraph {
   order: 2;
@@ -546,8 +535,7 @@ p { text-wrap: pretty; }
 
   /* SECTION HERO */
   .section-one { 
-    height: calc(100vh - 126px);
-    background-image: url("../assets/img/1.webp"); 
+    height: calc(100vh - 94px);
   }
 }
 
