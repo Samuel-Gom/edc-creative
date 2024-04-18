@@ -575,6 +575,144 @@ p { text-wrap: pretty; }
   font-weight: 500;
 }
 
+/* SECTION PRICING - NINE */
+.section-nine { background-image: url("../assets/img/9.webp");}
+
+.pricing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  height: 100%;
+}
+
+.pricing__content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.title-pricing {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.title-white-pricing { font-size: var(--step-4); }
+
+.pricing__paragraph {
+  font-size: var(--step-1);
+  font-weight: 500;
+}
+
+.pricing__info {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.pricing__info-content {
+  display: flex;
+  align-items: center;
+  gap: .8rem;
+}
+
+.pricing__info-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: var(--rose);
+  border-radius: .5rem;
+}
+
+.pricing__info-icon img {
+  height: 1rem;
+}
+
+.pricing__info-text {
+  font-size: var(--step--1);
+  font-weight: 700;
+}
+
+.pricing__card {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem 2.5rem;
+  background-color: #17003B;
+  border: 4px solid var(--rose);
+  border-radius: 5.5rem 0 5.5rem 0;
+  box-shadow: 0 0 24px var(--rose);
+}
+
+.pricing__card-logo {
+  width: 100%;
+  max-width: 250px;
+}
+
+.pricing__card-before,
+.pricing__card-now {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pricing__card-before-title, 
+.pricing__card-now-title {
+  font-size: var(--step-0);
+  font-weight: 700;
+}
+
+.pricing__card-before-price {
+  font-size: var(--step-1);
+  font-weight: 700;
+  text-decoration-color: #ff0000;
+}
+
+.pricing__card-now-price {
+  font-size: var(--step-4);
+  font-weight: 800;
+}
+
+.pricing__card-now-coin {
+  font-size: var(--step-0);
+  font-weight: 700;
+}
+
+.btn__primary--pricing {
+  padding: 1rem 2rem;
+  font-size: var(--step-0);
+  font-weight: 700;
+  box-shadow: 0 0 24px var(--rose); 
+}
+
+.pricing__card-info {
+  font-size: var(--step-0);
+  font-weight: 700;
+}
+
+.pricing__card-info--help { 
+  font-size: var(--step--1);
+  font-weight: 600; 
+}
+
+.pricing__card-info--help a {
+  font-weight: 800;
+  color: inherit;
+  transition: color .3s;
+
+  &:hover,
+  &:focus {
+    color: var(--rose);
+    text-decoration: underline;
+  }
+}
+
 @media (width >= 375px) {
   .navbar__container { flex-direction: row; }
 
@@ -632,4 +770,22 @@ p { text-wrap: pretty; }
   .about__container-lists {
     display: none;
   }
+
+  /* SECTION PRICING */
+  .btn__primary--pricing { padding-inline: 3rem; }
+}
+
+@media (width >= 1024px) {
+  .pricing { 
+    flex-direction: row;
+    justify-content: space-between;
+   }
+
+  .pricing__content { 
+    align-self: center; 
+    gap: 2rem;
+    width: 650px;
+  }
+
+  .pricing__info { justify-content: flex-start; }
 }
