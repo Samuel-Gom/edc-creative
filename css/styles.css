@@ -713,6 +713,61 @@ p { text-wrap: pretty; }
   }
 }
 
+/* SECTION FAQ - TEN */
+.section-ten { background-image: url("../assets/img/10.webp");}
+
+.faq {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  height: 100%;
+}
+
+.title-faq {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title-white-faq { font-size: var(--step-4); }
+
+.faq-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.faq__details {
+  width: 100%;
+  max-width: 650px;
+  margin-inline: auto;
+  border-radius: 2.3rem 0 2.3rem 0;
+  border: 1px solid var(--rose);
+}
+
+.faq__title {
+  padding: 1rem;
+  font-size: var(--step-1);
+  font-weight: 700;
+  text-align: center;
+  list-style: none; /* Oculta el marcador por defecto, para tener mejor seguridad de que se oculte */
+  background-color: var(--rose);
+  border-radius: 2.3rem 0 2.3rem 0;
+  box-shadow: 0 0 24px var(--rose);
+  cursor: pointer;
+}
+
+.faq__title:-webkit-details-marker { /* Oculta el marcador por defecto en safari o navegadores webkit */
+  display: none;
+}
+
+.faq__answer {
+  padding: 1rem 2rem;
+  font-size: var(--step-0);
+  font-weight: 500;
+}
+
 @media (width >= 375px) {
   .navbar__container { flex-direction: row; }
 
