@@ -579,7 +579,7 @@ p { text-wrap: pretty; }
 }
 
 /* SECTION PRICING - NINE */
-.section-nine { background-image: url("../assets/img/9.webp");}
+.section-nine { background-image: url("../assets/img/7.webp");}
 
 .pricing {
   display: flex;
@@ -717,7 +717,7 @@ p { text-wrap: pretty; }
 }
 
 /* SECTION FAQ - TEN */
-.section-ten { background-image: url("../assets/img/10.webp");}
+.section-ten { background-image: url("../assets/img/7.webp");}
 
 .faq {
   display: flex;
@@ -916,7 +916,6 @@ p { text-wrap: pretty; }
   /* SECTION HERO */
   .section-one { 
     height: calc(100vh - 100.38px);
-    background-image: url("../assets/img/1.webp"); 
   }
 
   .hero__footer-container {
