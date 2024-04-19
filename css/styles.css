@@ -267,7 +267,7 @@ p { text-wrap: pretty; }
   padding: 1rem 2rem;
   font-size: var(--step-1);
   font-weight: 700;
-  border-radius: 1.88rem 0 1.88rem 0;
+  border-radius: 1.25rem 0 1.25rem 0;
 }
 
 .btn__primary--hero { box-shadow: 0 0 40px var(--rose); }
