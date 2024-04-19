@@ -896,7 +896,7 @@ p { text-wrap: pretty; }
 }
 
 @media (width >= 768px) {
-  .btn { padding: .7rem 1rem; }
+  .navbar .btn { padding: .7rem 2rem; }
 
   /* HEADER */
   .nav__email { gap: 1rem; }
