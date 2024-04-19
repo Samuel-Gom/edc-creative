@@ -33,6 +33,23 @@
   --step-7: clamp(1.9956rem, 0.7353rem + 6.3017vi, 4.7684rem);
 }
 
+
+/* Cambiar el color cuando un usuario seleccione un texto */
+::selection {
+  background-color: var(--rose);
+  color: var(--white);
+}
+
+::-moz-selection {
+  background-color: var(--rose);
+  color: var(--white);
+}
+
+::-webkit-selection {
+  background-color: var(--rose);
+  color: var(--white);
+}
+
 html {
   scroll-behavior: smooth;
 }
