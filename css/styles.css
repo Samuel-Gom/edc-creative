@@ -768,6 +768,56 @@ p { text-wrap: pretty; }
   font-weight: 500;
 }
 
+/* SECTION ABOUT ME - ELEVEN */
+.section-eleven { 
+  position: relative;
+  background-image: url("../assets/img/12.webp"); 
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: var(--purple);
+    opacity: .3;
+  }
+}
+
+.about-me {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+  height: 100%;
+}
+
+.title-about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.about-me__subtitle {
+  font-size: var(--step-3);
+  font-weight: 700;
+}
+
+.about-me__paragraph {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: var(--step-1);
+  font-weight: 600;
+}
+
+.about-me__subtitle,
+.about-me__paragraph {
+  max-width: 650px;
+}
+
 @media (width >= 375px) {
   .navbar__container { flex-direction: row; }
 
