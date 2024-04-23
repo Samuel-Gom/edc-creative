@@ -672,17 +672,36 @@ p { text-wrap: pretty; }
   font-weight: 700;
 }
 
+.pricing__cards {
+  display: grid;
+  grid-template-areas: "card";
+  align-content: center;
+  padding-inline: 1.5rem;
+  overflow: hidden;
+}
+
 .pricing__card {
+  grid-area: card;
   align-self: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+  max-width: 350px;
+  margin-inline: auto;
   padding: 2rem 2.5rem;
   background-color: #17003B;
   border: 4px solid var(--rose);
   border-radius: 5.5rem 0 5.5rem 0;
   box-shadow: 0 0 24px var(--rose);
+  visibility: hidden;
+  transform: translateX(100%);
+  transition: transform .5s;
+}
+
+.pricing__card--visible {
+  visibility: visible; 
+  transform: translateX(0);
 }
 
 .pricing__card-logo {
@@ -690,23 +709,15 @@ p { text-wrap: pretty; }
   max-width: 250px;
 }
 
-.pricing__card-before,
 .pricing__card-now {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.pricing__card-before-title, 
 .pricing__card-now-title {
   font-size: var(--step-0);
   font-weight: 700;
-}
-
-.pricing__card-before-price {
-  font-size: var(--step-1);
-  font-weight: 700;
-  text-decoration-color: #ff0000;
 }
 
 .pricing__card-now-price {
@@ -747,6 +758,23 @@ p { text-wrap: pretty; }
     text-decoration: underline;
   }
 }
+
+.pricing__icons {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  height: max-content;
+  margin-top: 2rem;
+}
+
+.pricing__icons .chevron { 
+  cursor: pointer;
+  transition: color .3s;
+
+  &:hover {
+    color: var(--rose);
+  }
+ }
 
 /* SECTION FAQ - TEN */
 .section-ten { background-image: url("../assets/img/7.webp");}
@@ -791,6 +819,9 @@ p { text-wrap: pretty; }
   border-radius: 2.3rem 0 2.3rem 0;
   box-shadow: 0 0 24px var(--rose);
   cursor: pointer;
+  /* Quitar el fondo azul al dar click en moviles al summary */
+  -webkit-tap-highlight-color: transparent;  /* Para WebKit */
+  -moz-tap-highlight-color: transparent; /* Para Firefox */
 }
 
 .faq__title:-webkit-details-marker { /* Oculta el marcador por defecto en safari o navegadores webkit */
@@ -807,13 +838,14 @@ p { text-wrap: pretty; }
 .section-eleven { 
   position: relative;
   background-image: url("../assets/img/12.webp"); 
+  background-position: bottom;
 
   &::after {
     content: "";
     position: absolute;
     inset: 0;
     background-color: var(--purple);
-    opacity: .3;
+    opacity: .15;
   }
 }
 
@@ -824,7 +856,7 @@ p { text-wrap: pretty; }
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  gap: 1rem;
+  gap: 1.5rem;
   height: 100%;
 }
 
@@ -850,7 +882,7 @@ p { text-wrap: pretty; }
 
 .about-me__subtitle,
 .about-me__paragraph {
-  max-width: 650px;
+  max-width: 600px;
 }
 
 /* FOOTER */
@@ -1127,6 +1159,8 @@ p { text-wrap: pretty; }
       transform: rotate(35deg);
     }
   }
+
+  .btn__primary--pricing { white-space: nowrap; }
 }
 
 @media (width >= 1024px) {
@@ -1207,4 +1241,14 @@ p { text-wrap: pretty; }
     gap: 1.2rem;
     padding: 3rem 2.5rem; 
   }
+}
+
+@media (width >= 1200px) {
+  .to-learn,
+  .about-me { left: -2rem; }
+}
+
+@media (width >= 1440px) {
+  .to-learn,
+  .about-me { left: -6rem; }
 }
