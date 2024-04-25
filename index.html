@@ -312,36 +312,19 @@
           </div>
         </div>
       </div>
-      <div class="pricing__cards">
-        <article id="price-year" class="pricing__card pricing__card--visible">
-          <img class="pricing__card-logo" src="./assets/icons/logo.png" alt="Logo EDC Creative" loading="lazy">
-          <div class="pricing__card-now">
-            <span class="pricing__card-now-title">Ahora</span>
-            <span class="pricing__card-now-price">S/450.00</span>
-            <span class="pricing__card-now-coin">PEN</span>
-          </div>
-          <span class="pricing__card-info">Pago anual</span>
-          <a class="btn btn__primary btn__primary--pricing" href="#">¡COMPRAR AHORA!</a>
-          <span class="pricing__card-info">Paga con Mercado pago</span>
-          <span class="pricing__card-info pricing__card-info--help">¿Necesitas ayuda? <a href="#">Click aquí</a></span>
-        </article>
-        <article id="price-month" class="pricing__card">
-          <img class="pricing__card-logo" src="./assets/icons/logo.png" alt="Logo EDC Creative" loading="lazy">
-          <div class="pricing__card-now">
-            <span class="pricing__card-now-title">Ahora</span>
-            <span class="pricing__card-now-price">S/37.50</span>
-            <span class="pricing__card-now-coin">PEN</span>
-          </div>
-          <span class="pricing__card-info">Pago mensual</span>
-          <a class="btn btn__primary btn__primary--pricing" href="#">¡COMPRAR AHORA!</a>
-          <span class="pricing__card-info">Paga con Mercado pago</span>
-          <span class="pricing__card-info pricing__card-info--help">¿Necesitas ayuda? <a href="#">Click aquí</a></span>
-        </article>
-        <div class="pricing__icons">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" id="btn-1" class="chevron"><path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"/></svg>
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" id="btn-2"class="chevron"><path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/></svg>
+      <article class="pricing__card">
+        <img class="pricing__card-logo" src="./assets/icons/logo.png" alt="Logo EDC Creative" loading="lazy">
+        <div class="pricing__card-now">
+          <span class="pricing__card-now-title">Ahora</span>
+          <span class="pricing__card-now-price">S/450.00</span>
+          <span class="pricing__card-now-coin">PEN</span>
         </div>
-      </div>
+        <span class="pricing__card-info">Elige cómo pagar</span>
+        <a class="btn btn__primary btn__primary--pricing" href="#">Pago anual</a>
+        <a class="btn btn__secondary btn__secondary--pricing" href="#">Pago mensual</a>
+        <span class="pricing__card-info">Paga con Mercado pago</span>
+        <span class="pricing__card-info pricing__card-info--help">¿Necesitas ayuda? <a href="#">Click aquí</a></span>
+      </article>
     </section>
   </section>
   <section class="section section-ten">
@@ -426,23 +409,5 @@
       <p class="footer__developed container">Desarrollado por <strong>Next Boost Perú</strong></p>
     </div>
   </footer>
-
-  <script>
-    function viewAndHiddenClick(btnId, cardId) {
-      const cards = document.querySelectorAll('.pricing__card');
-
-      // Ocultar todos los cards
-      cards.forEach(function(card) {
-        card.classList.remove('pricing__card--visible');
-      });
-
-      // Mostrar el card correspondiente
-      const selectedCard = document.getElementById(cardId);
-      selectedCard.classList.add('pricing__card--visible');
-    }
-
-    document.getElementById('btn-1').addEventListener('click', () => viewAndHiddenClick('btn-1', 'price-year'));
-    document.getElementById('btn-2').addEventListener('click', () => viewAndHiddenClick('btn-2', 'price-month'));
-  </script>
 </body>
 </html>
